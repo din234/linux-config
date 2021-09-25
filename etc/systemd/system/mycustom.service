@@ -1,0 +1,8 @@
+[Unit]
+Description=Startup
+
+[Service]
+ExecStart=/usr/bin/iw dev wlp3s0 set power_save off
+
+[Install]
+WantedBy=multi-user.target
