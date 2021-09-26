@@ -1,0 +1,14 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda8
+UUID=50755c71-e471-4e2b-9a40-7ce78333d634	/         	ext4      	rw,relatime	0 1
+
+# /dev/sda7
+UUID=295e073d-c25b-4dd3-8372-1dcd2a872648	none      	swap      	defaults  	0 0
+
+#PARTUUID=6c7222ad-52ba-6c45-9c91-ca41d98b94b5	/mnt/WIN_SHARE		ntfs-3g		exec,rw,users,auto		0 0	
+PARTUUID=6c7222ad-52ba-6c45-9c91-ca41d98b94b5	/mnt/WIN_SHARE		ntfs-3g		exec,rw,permissions,auto			0 0	
+
+#/dev/sda5	/mnt/WIN_SHARE		ntfs-3g		exec,rw,permissions,auto			0 0	
