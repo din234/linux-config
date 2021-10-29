@@ -1,0 +1,30 @@
+Section "Module"
+   Load "dri3"
+EndSection
+
+Section "Device"
+    Identifier      "Device0"
+    Driver          "intel"
+    Option          "Backlight"      "intel_backlight"
+
+    # DRI 3 evocation lines below
+    Option      "DRI"   "3"
+    Option      "TripleBuffer" "true"
+    Option      "TearFree"     "true"
+EndSection
+
+Section "Monitor"
+    Identifier      "Monitor0"
+EndSection
+
+Section "Screen"
+    Identifier      "Screen0"
+    Monitor         "Monitor0"
+    Device          "Device0"
+EndSection
+
+#Section "Device"
+#	Identifier "Intel Graphic"
+#	Driver "intel"
+#	Option "TearFree" "true"
+#EndSection
